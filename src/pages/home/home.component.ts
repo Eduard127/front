@@ -2,13 +2,15 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { HomeModule } from './home.module';
 
-import { RecetaPage } from '../receta/receta';
+//import { RecetaPage } from '../receta/receta';
+
 @Component({
   templateUrl: 'home.html'
 })
-export class HomePage {
-  rootPage:any = RecetaPage;
+export class HomeApp {
+  rootPage:any = HomeModule;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

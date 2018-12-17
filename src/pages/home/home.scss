@@ -1,3 +1,33 @@
 page-home {
 
+  
+}
+
+.tamaño {
+    width: 25%;
+    
+}
+.encabezado{
+
+    text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    
+}
+
+.searchbar{
+
+    width: 25%;
+    position: relative;
+    top:0;
+    bottom:0;
+    right:0;
+    left: 330px;
+    text-rendering: optimizeLegibility;
+    float:0;
+
+}
+
+.header{
+
+    max-height: 0%
 }
