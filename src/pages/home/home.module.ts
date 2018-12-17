@@ -4,23 +4,22 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
-import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-
+import { HomeApp } from '../home/home.component';
+import { RecetaPage } from '../receta/receta';
 
 @NgModule({
   declarations: [
-    MyApp,
-    HomePage
+    HomeApp,
+    RecetaPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(HomeApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    HomePage
+    HomeApp,
+    RecetaPage
   ],
   providers: [
     StatusBar,
@@ -28,4 +27,4 @@ import { HomePage } from '../pages/home/home';
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
-export class AppModule {}
+export class RecetaModule {}
