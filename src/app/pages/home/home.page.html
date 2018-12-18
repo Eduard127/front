@@ -1,0 +1,21 @@
+<ion-nav [root]="HomePage"></ion-nav>
+
+<ion-header>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-title class="encabezado">Categorias</ion-title>
+</ion-header>
+
+<ion-content class="tamaño">
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+      {{ item }}
+    </button>
+  </ion-list>
+  
+  <ion-list no-Lines>
+    <ion-item *ngFor="let item of items">
+      {{ item }}
+    </ion-item>
+  </ion-list>
+</ion-content>
+
