@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
+
 //import { MyApp } from '../../app/app.component';
 //import { RecetaPage } from '../Receta/Receta';
 //import { Homepage } from './home.component';
 
 @Component({
+  
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
+  
 })
 export class HomePage {
   content: any;
@@ -34,4 +37,6 @@ export class HomePage {
     console.log("Selected Item", item);
   }
 }
+
+
 

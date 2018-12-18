@@ -1,21 +1,50 @@
 <ion-nav [root]="HomePage"></ion-nav>
 
 <ion-header>
-  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
-  <ion-title class="encabezado">Categorias</ion-title>
+    <ion-toolbar >
+    </ion-toolbar>
+  <ion-title (ionInput)="getItems($event)">Categorias</ion-title>
 </ion-header>
 
-<ion-content class="tamaño">
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
-      {{ item }}
-    </button>
+
+<!-- List of Text Items -->
+<ion-list class="tamaño">
+    <ion-item-sliding>
+    <ion-item>
+      <ion-label>Reposteria</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Pescados</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Pastas</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Sopas</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Postres</ion-label>
+    </ion-item>
+    <ion-item>
+     <ion-label>Bebidas</ion-label>
+    </ion-item>
+    <ion-item>
+     <ion-label>Ensaladas</ion-label>
+    </ion-item>
+    <ion-item>
+     <ion-label>Platos</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Salsas</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Carnes</ion-label>
+    </ion-item>
+    </ion-item-sliding>
   </ion-list>
   
-  <ion-list no-Lines>
-    <ion-item *ngFor="let item of items">
-      {{ item }}
-    </ion-item>
-  </ion-list>
-</ion-content>
+  
+
+  
+  
 
