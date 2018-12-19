@@ -1,49 +1,58 @@
 <ion-nav [root]="HomePage"></ion-nav>
 
-<ion-header>
-    <ion-toolbar >
-    </ion-toolbar>
-  <ion-title (ionInput)="getItems($event)">Categorias</ion-title>
-</ion-header>
+<ion-app>
+  <ion-split-pane>
+    <ion-menu>
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Categorias</ion-title>
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content>
+        <ion-list>
+          <ion-list-header>
+            Navigate
+          </ion-list-header>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item button>
+              
+              <ion-content>
+                <ion-list>
+                  <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+                    {{ item }}
+                  </button>
+                </ion-list>
+              </ion-content>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+   
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-toggle>
+              <ion-button>
+                <ion-icon slot="icon-only" name="menu"></ion-icon>
+              </ion-button>
+            </ion-menu-toggle>
+          </ion-buttons>
+          <ion-title>Header</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content padding>
+        <h1>Main Content</h1>
+      </ion-content>
+    
 
 
-<!-- List of Text Items -->
-<ion-list class="tamaño">
-    <ion-item-sliding>
-    <ion-item>
-      <ion-label>Reposteria</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Pescados</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Pastas</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Sopas</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Postres</ion-label>
-    </ion-item>
-    <ion-item>
-     <ion-label>Bebidas</ion-label>
-    </ion-item>
-    <ion-item>
-     <ion-label>Ensaladas</ion-label>
-    </ion-item>
-    <ion-item>
-     <ion-label>Platos</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Salsas</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Carnes</ion-label>
-    </ion-item>
-    </ion-item-sliding>
-  </ion-list>
-  
-  
+  </ion-split-pane>
+</ion-app>
+
+
 
   
   

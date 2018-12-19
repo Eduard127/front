@@ -5,6 +5,8 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: './pages/home/home.module#HomePageModule' },
   { path: 'receta', loadChildren: './pages/receta/receta.module#RecetaPageModule' },
+  { path: 'login', loadChildren: './pages/user/login/login.module#LoginPageModule' },
+  { path: 'register', loadChildren: './pages/user/register/register.module#RegisterPageModule' },
 ];
 
 @NgModule({
