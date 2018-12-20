@@ -4,7 +4,7 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
-import { RegisterPage } from './registre.page';
+import { RegisterPage } from './register.page';
 
 @NgModule({
   imports: [
@@ -20,4 +20,4 @@ import { RegisterPage } from './registre.page';
   ],
   declarations: [RegisterPage]
 })
-export class RegistroPageModule {}
+export class RegisterPageModule {}
